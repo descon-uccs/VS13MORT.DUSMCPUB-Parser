@@ -39,6 +39,12 @@ outStr = ""
 for line in fileObj:
 
                Resident_Status = line[19].strip()
+               Occurrence_state_FIPS = line[20:21].strip()
+               Occurrence_county_FIPS = line[22:24].strip()
+               Occurrence_county_pop = line[27].strip()
+               Residence_state_FIPS = line[28:29].strip()
+               Residence_county_FIPS = line[34:36].strip()
+               Residence_county_pop = line[50].strip()
                Education = line[60:62].strip()
                Month_Of_Death = line[63:67].strip()
                Sex = line[68].strip()
