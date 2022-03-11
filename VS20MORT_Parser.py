@@ -22,8 +22,8 @@
 #
 
 
-fileObj = open("C:\data\PO1\VS13MORT.DUSMCPUB",'r')
-fileOutObj = open("C:\data\PO1\VS13MORT.csv","a")
+fileObj = open("__infilename__",'r')
+fileOutObj = open("__outfilename__.csv","a")
 
 fileOutObj.write('Resident_Status, Education, Month_Of_Death, Sex, Age_Key, Age_Value, Age_Sub_Flag, Age_Recode_52, Age_Recode_27, ' + \
                  'Age_Recode_12, Infant_Age_Recode_22, Place_Of_Death, Marital_Status, DOW_of_Death, Data_Year, Injured_At_Work, ' + \
