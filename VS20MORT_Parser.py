@@ -25,7 +25,8 @@
 fileObj = open("__infilename__",'r')
 fileOutObj = open("__outfilename__.csv","a")
 
-fileOutObj.write('Resident_Status, Education, Month_Of_Death, Sex, Age_Key, Age_Value, Age_Sub_Flag, Age_Recode_52, Age_Recode_27, ' + \
+fileOutObj.write('Resident_Status, Occurrence_state_FIPS, Occurrence_county_FIPS, Occurrence_county_pop, Residence_state_FIPS, Residence_county_FIPS, Residence_county_pop, ' + \
+                 'Education, Month_Of_Death, Sex, Age_Key, Age_Value, Age_Sub_Flag, Age_Recode_52, Age_Recode_27, ' + \
                  'Age_Recode_12, Infant_Age_Recode_22, Place_Of_Death, Marital_Status, DOW_of_Death, Data_Year, Injured_At_Work, ' + \
                  'Manner_Of_Death, Method_Of_Disposition, Autopsy, Activity_Code, Place_Of_Causal_Injury,  ICD10, Cause_Recode_358, ' + \
                  'Cause_Recode_113, Infant_Cause_Recode_130, Cause_Recode_39, Entity_Axis_Conditions, EAC1, EAC2, EAC3, EAC4, EAC5, ' + \
@@ -124,7 +125,9 @@ for line in fileObj:
                
                
                
-               outStr = (Resident_Status +              ', ' + Education +              ', ' + Month_Of_Death +         ', ' + Sex + \
+               outStr = (Resident_Status + ', ' + Occurrence_state_FIPS + ', ' + Occurrence_county_FIPS + ', ' + Occurrence_county_pop + ', ' + Residence_state_FIPS +  \
+                         ', ' + Residence_county_FIPS + ', ' + Residence_county_pop + \
+                         ', ' + Education +              ', ' + Month_Of_Death +         ', ' + Sex + \
                          ', ' + Age_Key +               ', ' + Age_Value +              ', ' + Age_Sub_Flag +           ', ' + Age_Recode_52 + \
                          ', ' + Age_Recode_27 +         ', ' + Age_Recode_12 +          ', ' + Infant_Age_Recode_22 +   ', ' + Place_Of_Death + \
                          ', ' + Marital_Status +        ', ' + DOW_of_Death +           ', ' + Data_Year +              ', ' + Injured_At_Work +  \
